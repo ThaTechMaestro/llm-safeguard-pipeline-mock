@@ -1,0 +1,11 @@
+prompt,ic_score,model_output,oc_score,decision,blocked_stage
+Prompt 1,0.9924088099384781,,,blocked,input
+Prompt 2,0.4036423460933374,Model response to: Prompt 2,0.4436197446049941,passed,
+Prompt 3,0.06582878277779336,Model response to: Prompt 3,0.7736225466033407,blocked,output
+Prompt 4,0.9993697516217886,,,blocked,input
+Prompt 5,0.1753831937164505,Model response to: Prompt 5,0.5289654706566677,blocked,output
+Prompt 6,0.9727287461583801,,,blocked,input
+Prompt 7,0.873959690177502,,,blocked,input
+Prompt 8,0.5599359548649848,,,blocked,input
+Prompt 9,0.25563003872698775,Model response to: Prompt 9,0.20157526635000944,passed,
+Prompt 10,0.8504331312086719,,,blocked,input
