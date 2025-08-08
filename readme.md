@@ -1,6 +1,6 @@
 # LLM Safeguard Pipeline (Mock)
 
-This repository contains a **mock implementation** of the safeguard defense pipeline described in *Adversarial Attacks on the LLM Safeguard Pipeline* (2025).  
+This repository contains a **mock implementation** of the safeguard pipeline described in *Adversarial Attacks on the LLM Safeguard Pipeline* (2025).  
 It models a two-stage filtering architecture, **input classifier** and **output classifier**, used to reduce the risk of harmful outputs in LLM deployments.
 
 The focus is on **architecture clarity** and **defensive reasoning**, not production-grade code.  
