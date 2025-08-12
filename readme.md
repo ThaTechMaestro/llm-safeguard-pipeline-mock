@@ -48,27 +48,34 @@ This repository is part of a **multi-phase engineering track** toward a full-sca
 **Phase 1 – Mock Pipeline (Current)**  
 - Implement two-stage safeguard logic with mock classifiers and model.  
 - Validate decision flow and blocking behavior.  
-- Establish configurable thresholds and logging.
-- Repo: [Link](https://github.com/ThaTechMaestro/llm-safeguard-pipeline-mock)
+- Establish configurable thresholds and logging.  
+- Repo: [llm-safeguard-pipeline-mock](https://github.com/ThaTechMaestro/llm-safeguard-pipeline-mock)
 
-**Phase 2 – Attack Simulation**  
-- Implement mock STACK and transfer-STACK attack logic.  
+**Phase 2 – Threat Models & STACK Attack Mock**   
+- Implement mock STACK attack logic (front-to-back, transfer).  
+- Simulate attacker access levels (black-box, semi-separable, inseparable).  
 - Measure impact on IC and OC separately.  
-- Capture results in structured metrics.
-- Repo: [Link](https://github.com/ThaTechMaestro/llm-safeguard-stack-attack-mock)
+- Repo: [llm-safeguard-stack-attack-mock](https://github.com/ThaTechMaestro/llm-safeguard-stack-attack-mock)
 
-**Phase 3 – Real Model Integration**  
-- Swap mock model for a small, cost-efficient LLM (e.g., Mistral-7B).  
-- Replace mock classifiers with lightweight fine-tuned safety classifiers.  
-- Run real-world adversarial prompts and collect statistics.
+**Phase 3 – Confirm Universal Jailbreak Module** 
+- Implement universal jailbreak (“Confirm” prompt) from paper.  
+- Test bypass effectiveness against IC and OC in the mock pipeline.  
+- Compare ASR (Attack Success Rate) with STACK results.  
+- Repo: `llm-safeguard-confirm-mock`
 
-**Phase 4 – Scaling & Automation**  
-- Integrate with asynchronous job queues for batch evaluation.  
-- Add telemetry, scoring dashboards, and automated reporting.  
-- Begin resilience tuning with adaptive thresholds.
+**Phase 4 – Calibration & Threshold Experiments**  
+- Replicate paper’s threshold tuning for target refusal rates.  
+- Measure tradeoffs between blocking harmful and benign prompts.  
+- Repo: `llm-safeguard-threshold-calibration`
 
-**Phase 5 – Production-Grade Safeguard Stack**  
-- Harden architecture for deployment in trust-critical AI systems.  
+**Phase 5 – Attack Success Rate Reproduction**  
+- Simulate experiments from paper to reproduce reported metrics.  
+- Repo: `llm-safeguard-attack-metrics`
+
+**Phase 6 – Combined System & Dashboard**  
+- Integrate pipeline, STACK, Confirm, and calibration into one repo.  
+- Add visualization for threat models, blocked stages, ASR.  
+- Repo: `llm-safeguard-simulator` 
 
 ## File Structure
 
