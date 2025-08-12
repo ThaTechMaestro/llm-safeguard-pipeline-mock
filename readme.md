@@ -51,7 +51,7 @@ This repository is part of a **multi-phase engineering track** toward a full-sca
 - Establish configurable thresholds and logging.
 - Repo: [Link](https://github.com/ThaTechMaestro/llm-safeguard-pipeline-mock)
 
-**Phase 2 – Attack Simulation **  
+**Phase 2 – Attack Simulation**  
 - Implement mock STACK and transfer-STACK attack logic.  
 - Measure impact on IC and OC separately.  
 - Capture results in structured metrics.
