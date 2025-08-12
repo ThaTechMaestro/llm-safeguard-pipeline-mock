@@ -41,6 +41,34 @@ This mirrors the architecture discussed in the paper while remaining safe for op
 - Enable **controlled experiments** on attack strategies (e.g., step-by-step jailbreaks).  
 - Support **threshold calibration exercises** to balance safety and usability. 
 
+## Phase Progression
+
+This repository is part of a **multi-phase engineering track** toward a full-scale, real-model safeguard system.
+
+**Phase 1 – Mock Pipeline (Current)**  
+- Implement two-stage safeguard logic with mock classifiers and model.  
+- Validate decision flow and blocking behavior.  
+- Establish configurable thresholds and logging.
+- Repo: [Link](https://github.com/ThaTechMaestro/llm-safeguard-pipeline-mock)
+
+**Phase 2 – Attack Simulation **  
+- Implement mock STACK and transfer-STACK attack logic.  
+- Measure impact on IC and OC separately.  
+- Capture results in structured metrics.
+- Repo: [Link](https://github.com/ThaTechMaestro/llm-safeguard-stack-attack-mock)
+
+**Phase 3 – Real Model Integration**  
+- Swap mock model for a small, cost-efficient LLM (e.g., Mistral-7B).  
+- Replace mock classifiers with lightweight fine-tuned safety classifiers.  
+- Run real-world adversarial prompts and collect statistics.
+
+**Phase 4 – Scaling & Automation**  
+- Integrate with asynchronous job queues for batch evaluation.  
+- Add telemetry, scoring dashboards, and automated reporting.  
+- Begin resilience tuning with adaptive thresholds.
+
+**Phase 5 – Production-Grade Safeguard Stack**  
+- Harden architecture for deployment in trust-critical AI systems.  
 
 ## File Structure
 
