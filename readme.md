@@ -113,4 +113,4 @@ Results are stored in `results.csv` with details for each stage (scores, decisio
 
 This repo is **deliberately simplified** for study purposes.
 Real-world safeguard/defense systems involve more complex classifiers, multi-modal inputs, and dynamic policy enforcement.
-The mock design here provides a starting point for reasoning about **attack surfaces**, **compositional defenses**, and **trust engineering** at scale.
+The mock design here provides a starting point for reasoning about **attack surfaces** and **compositional defenses**
